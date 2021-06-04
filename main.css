@@ -1,0 +1,152 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+*:before, *:after { 
+	content: '';
+}
+
+html, body {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	background: #111;
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: #abc;
+	text-shadow: 1px 1px #222;
+}
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	padding: 0 20px;
+}
+
+.page {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.page-inner {
+	width: 100%;
+	max-width: 1140px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	min-height: 100px;
+	background: #333;
+}
+
+.main-content {
+	flex: 1;
+	padding: 20px 0;
+	background: #222;
+}
+
+.form-calc {
+	width: 80%;
+	padding: 50px 20px;
+	background: #444;
+}
+
+
+.input {
+	margin-bottom: 20px;
+	padding: 10px;
+	background: #555;
+	transition: background .3s;
+}
+
+.input:hover {
+	background: #5c5c5c;
+}
+
+.input-text {
+	position: relative;
+}
+
+.input__label {
+
+}
+
+.input-text__label {
+
+}
+
+.input-text__label span {
+	color: #f00;
+}
+
+.input-text__label {
+	position: absolute;
+	top: 18px;
+	left: 20px;
+	color: #eee;
+}
+
+.input-text__input {
+	padding: 10px 15px;
+	text-shadow: 1px 1px #222;
+	background: #444;
+	transition: background .3s;
+}
+
+.input-text__input:hover {
+	cursor: pointer;
+}
+
+.input-text__input._focus {
+	color: #abc;
+	cursor: text;
+	background: #333;
+}
+
+
+.input-file {
+}
+
+.input-file__label {
+    width: 180px;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 25px;
+    cursor: pointer;
+    display: block;
+    font: 14px/50px Tahoma;
+    transition: all 0.18s ease-in-out;
+    border: 1px solid #4FD666;
+    background: linear-gradient(to top right, #3EC97A, #69EA49 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;
+    color: #4FD666;
+}
+
+.input-file__label:hover {
+    color: white;
+    background-position: bottom left;
+}
+
+.input-file__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.footer {
+	min-height: 140px;
+	background: #333;
+}
